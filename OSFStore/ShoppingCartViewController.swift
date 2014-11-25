@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ShoppingCartViewController.swift
 //  OSFStore
 //
 //  Created by Ryan Chang on 14/11/23.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ShoppingCartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
