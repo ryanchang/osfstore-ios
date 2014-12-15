@@ -28,6 +28,7 @@ class ProductListViewController: UIViewController {
     @IBAction func showHUD() {
         SVProgressHUD.showSuccessWithStatus("It works!")
         getProducts()
+        getProduct(1)
     }
     
     func getProducts() -> [Product] {
@@ -66,5 +67,30 @@ class ProductListViewController: UIViewController {
         
         return products
     }
+    
+    func getProduct(productId: Int) -> Product? {
+        var error:  NSError?
+        var product: Product?
+        let manager = AFHTTPRequestOperationManager()
+        manager.GET("http://addmenow.net:4000/api/products/\(productId)", parameters: nil, success: { (operation, responseObject) -> Void in
+            println(responseObject)
+            
+            if let p: NSDictionary = responseObject as? NSDictionary {
+                if let id = p.valueForKey("id") as? Int {
+                    if let name = p.valueForKey("name") as? String {
+                        if let desc = p.valueForKey("desc") as? String {
+                            if let price = p.valueForKey("price") as? Float {
+                                product = Product(id: id, name: name, desc: desc, price: price)
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }) { (operation, error) -> Void in
+            println(error)
+        }
+        
+        return product
+    }
 }
-
