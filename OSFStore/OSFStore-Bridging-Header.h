@@ -10,6 +10,7 @@
 #define OSFStore_OSFStore_Bridging_Header_h
 
 #import <AFNetworking/AFNetworking.h>
+#import "UIImageView+AFNetworking.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 #endif

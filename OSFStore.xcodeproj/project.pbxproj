@@ -16,6 +16,7 @@
 		940AE1061A21C440009DFFB8 /* OSFStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AE1051A21C440009DFFB8 /* OSFStoreTests.swift */; };
 		941BE84A1A24805A00C2E27C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BE8491A24805A00C2E27C /* Product.swift */; };
 		941BE84D1A24844200C2E27C /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BE84C1A24844200C2E27C /* ProductListViewController.swift */; };
+		94A94C471A3FD0C50000AB4B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A94C461A3FD0C50000AB4B /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		941BE8491A24805A00C2E27C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = models/Product.swift; sourceTree = "<group>"; };
 		941BE84C1A24844200C2E27C /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListViewController.swift; path = controller/ProductListViewController.swift; sourceTree = "<group>"; };
 		94689D6B1A21D57B00E05070 /* OSFStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSFStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		94A94C461A3FD0C50000AB4B /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductCell.swift; path = OSFStore/views/ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		940AE0DF1A21C43F009DFFB8 = {
 			isa = PBXGroup;
 			children = (
+				94A94C461A3FD0C50000AB4B /* ProductCell.swift */,
 				940AE0EA1A21C43F009DFFB8 /* OSFStore */,
 				940AE1021A21C440009DFFB8 /* OSFStoreTests */,
 				940AE0E91A21C43F009DFFB8 /* Products */,
@@ -297,6 +300,7 @@
 			files = (
 				940AE0F21A21C43F009DFFB8 /* ShoppingCartViewController.swift in Sources */,
 				941BE84A1A24805A00C2E27C /* Product.swift in Sources */,
+				94A94C471A3FD0C50000AB4B /* ProductCell.swift in Sources */,
 				941BE84D1A24844200C2E27C /* ProductListViewController.swift in Sources */,
 				940AE0EE1A21C43F009DFFB8 /* AppDelegate.swift in Sources */,
 			);
